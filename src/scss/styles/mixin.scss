@@ -1,0 +1,51 @@
+@mixin border {
+  border: 1px solid $borderColor;
+  border-radius: 0.2em;
+  //margin: 4px 0 4px 8px;
+}
+
+@mixin inputPadding {
+  padding: 2px 4px;
+  background: white;
+}
+
+@mixin selectPadding {
+  padding: 2px 4px;
+}
+
+@mixin flex($direction, $horizontal, $vertical) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $horizontal;
+  align-items: $vertical;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+@mixin shadow {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.16),0 2px 4px 0 rgba(0,0,0,.12) !important;
+  border-radius: 5px;
+}
+
+@mixin shadowActive {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.16),0 1px 2px 0 rgba(0,0,0,.12) !important;
+}
+
+@mixin plateShadow {
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12) !important;
+  border-radius: 5px;
+}
+
+@mixin button {
+  @include shadow;
+  outline: none;
+  border-radius: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &:hover {
+    @include shadowActive;
+  }
+}

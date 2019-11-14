@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 1</title>
+</head>
+<body>
+
+<div id="header">JS Band Delivery</div>
+
+<div id="main">
+    <div id="forms">
+        <form id="shipform" action="" name="shipform">
+            <h3>Ship / Argosy</h3>
+
+            <label for="idofship">Input id</label>
+            <input id="idofship" type="text" placeholder="Input id">
+
+            <label for="shipmodel">Select Model</label>
+            <select name="shipmodel" id="shipmodel">
+                <option value="" selected></option>
+                <option value="small">Small</option>
+                <option value="middle">Middle</option>
+                <option value="big">Big</option>
+                <option value="xl">XL</option>
+            </select>
+
+            <label for="serialnumber">Input Serial Number / Name</label>
+            <input id="serialnumber" type="text" placeholder="Input SN/N">
+
+            <label for="shipproducedyear">Input Produced Year</label>
+            <input id="shipproducedyear" type="text" placeholder="Input Produced Year">
+
+            <label for="shipcapacity">Input Capacity</label>
+            <input id="shipcapacity" type="text" placeholder="Input Capacity">
+
+            <label for="shipavgspeed">Input Average Speed</label>
+            <input id="shipavgspeed" type="text" placeholder="Input Speed">
+
+            <label for="countofteam">Input Count of Team</label>
+            <input id="countofteam" type="text" placeholder="Input Count of Team">
+
+            <input type="button" id="saveship" value="Save Ship" onclick="saveShip()">
+
+        </form>
+        <form id="truckform" action="" name="truckform">
+            <h3>Truck</h3>
+
+            <label for="truckid">Input id</label>
+            <input id="truckid" type="text" placeholder="Input id">
+
+            <label for="truckmodel">Select Model</label>
+            <select name="truckmodel" id="truckmodel">
+                <option value="" selected></option>
+                <option value="man">MAN</option>
+                <option value="volvo">Volvo</option>
+                <option value="Ford">Ford</option>
+            </select>
+
+            <label for="licenseplate">Input Serial Number / Name</label>
+            <input id="licenseplate" type="text" placeholder="Input License Plate">
+
+            <label for="truckproducedyear">Input Produced Year</label>
+            <input id="truckproducedyear" type="text" placeholder="Input Produced Year">
+
+            <label for="truckcapacity">Input Capacity</label>
+            <input id="truckcapacity" type="text" placeholder="Input Capacity">
+
+            <label for="truckavgspeed">Input Average Speed</label>
+            <input id="truckavgspeed" type="text" placeholder="Input Speed">
+
+            <label for="typeofgas">Select Type of Gas</label>
+            <select name="typeofgas" id="typeofgas">
+                <option value="" selected></option>
+                <option value="gas">Gas</option>
+                <option value="diesel">Diesel</option>
+            </select>
+
+            <input type="button" id="savetruck" value="Save Truck" onclick="saveTruck()">
+
+        </form>
+        <form id="costform" action="" name="costform">
+            <h3>Cost</h3>
+
+            <label for="transportmodel">Select Model</label>
+            <select name="transportmodel" id="transportmodel">
+                <option value="" selected></option>
+                <option value="small">Small</option>
+                <option value="middle">Middle</option>
+                <option value="big">Big</option>
+                <option value="xl">XL</option>
+                <option value="man">MAN</option>
+                <option value="volvo">Volvo</option>
+                <option value="Ford">Ford</option>
+            </select>
+
+            <label for="costbykg">Input Cost (by 1 kg of cargo)</label>
+            <input id="costbykg" type="text" placeholder="Input Cost by 1kg">
+
+            <label for="costbykm">Input Cost (by 1 km of distance)</label>
+            <input id="costbykm" type="text" placeholder="Input Cost by 1km">
+
+            <input type="button" id="savetruck" value="Save Cost" onclick="saveCost()">
+
+        </form>
+
+    </div>
+
+    <h4>List of Transport</h4>
+    <div id="listoftransport">
+
+    </div>
+
+    <h4>List of Cost</h4>
+    <div id="costlist">
+
+    </div>
+
+</div>
+
+<div id="footer">Ruslan Lavreniuk</div>
+</body>
+</html>

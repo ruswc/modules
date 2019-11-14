@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: $textColor;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @include flex(column, flex-start, center);
+  flex-wrap: nowrap;
+}
+
+#header,
+#footer {
+  @include flex(row, flex-start, center);
+  width: 100%;
+}
+
+#header {
+  border-bottom: 2px solid $borderColor;
+}
+
+#main {
+  @include flex(column, flex-start, center);
+  flex: 1 0 auto;
+}
+
+#footer {
+  border-top: 2px solid $borderColor;
+  flex: 0 0 auto;
+}
+
+#form, #tasks {
+  @include flex(row, center, center);
+
+}
+
+//------new------
+.plate {
+  @include plateShadow;
+  @include flex(column, flex-start, flex-start);
+  margin: 10px;
+  padding: 10px 20px;
+  max-width: 200px;
+}
+
+#listoftransport,
+#costlist {
+  @include flex(row, flex-start, flex-start)
+}
+
+#forms {
+  @include flex(row, center, flex-start);
+
+  form {
+    margin: 20px;
+  }
+}
+
+strong {
+  color: $strongColor;
+}
